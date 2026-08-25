@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Inducción y Capacitación — SETIB</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="../SETIB - KORUM/capacitaciones.css">
+</head>
+<body>
+
+  <!-- NAVBAR INTERNO -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="user-info">
+        <div class="avatar"><i data-lucide="user"></i></div>
+        <div>
+          <h2 id="userName">Cargando...</h2>
+          <span class="user-role" id="userEmail">conductor@setib.com</span>
+        </div>
+      </div>
+      <button class="btn-logout" id="btnLogout">
+        <i data-lucide="log-out"></i>
+        Cerrar Sesión
+      </button>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="portal-container">
+
+    <!-- HERO / BIENVENIDA -->
+    <section class="welcome-banner">
+      <span class="badge">Módulo 01 — Inducción Corporativa</span>
+      <h1>Bienvenido al Equipo de SETIB S.A.S.</h1>
+      <p>Este espacio está diseñado para brindarle las herramientas y conocimientos necesarios para desempeñar su labor con excelencia, seguridad y compromiso.</p>
+    </section>
+
+    <!-- SOBRE LA EMPRESA (A qué se dedica, Misión y Visión) -->
+    <section class="company-info-grid">
+      
+      <div class="info-card wide">
+        <div class="card-icon"><i data-lucide="bus"></i></div>
+        <h3>¿Quiénes Somos?</h3>
+        <p>En <strong>SETIB S.A.S. (Servicios Especiales Tibirita)</strong> nos especializamos en brindar soluciones integrales de transporte especial y corporativo. Operamos rutas empresariales en la Sabana de Bogotá y la zona industrial de Cundinamarca, garantizando la movilidad segura de miles de trabajadores diariamente.</p>
+      </div>
+
+      <div class="info-card">
+        <div class="card-icon"><i data-lucide="target"></i></div>
+        <h3>Misión</h3>
+        <p>Prestar un servicio de transporte especial de pasajeros caracterizado por la puntualidad, seguridad y comodidad, soportado en un equipo humano calificado y una flota moderna que cumple altos estándares de calidad.</p>
+      </div>
+
+      <div class="info-card">
+        <div class="card-icon"><i data-lucide="eye"></i></div>
+        <h3>Visión</h3>
+        <p>Ser reconocidos para el 2030 como la empresa líder en soluciones de transporte corporativo en Cundinamarca, destacándonos por la innovación tecnológica, cero accidentalidad y la satisfacción de nuestros clientes.</p>
+      </div>
+
+    </section>
+
+    <!-- RESPONSABILIDADES DEL CONDUCTOR -->
+    <section class="responsibilities-section">
+      <div class="section-title">
+        <h2><i data-lucide="shield-check"></i> Responsabilidades del Conductor</h2>
+        <p>Como conductor de SETIB, usted es la imagen principal de nuestra compañía ante los clientes. Su compromiso diario garantiza la seguridad de todos.</p>
+      </div>
+
+      <div class="rules-grid">
+        <div class="rule-item">
+          <div class="rule-number">01</div>
+          <div class="rule-content">
+            <h4>Inspección Pre-operacional</h4>
+            <p>Diligenciar diariamente el formato de preoperacional y verificar estado de llantas, frenos, luces y niveles antes de iniciar cada ruta.</p>
+          </div>
+        </div>
+
+        <div class="rule-item">
+          <div class="rule-number">02</div>
+          <div class="rule-content">
+            <h4>Cumplimiento de Horarios</h4>
+            <p>Llegar con mínimo 15 minutos de anticipación al punto de inicio de la ruta para garantizar el cumplimiento estricto del turno.</p>
+          </div>
+        </div>
+
+        <div class="rule-item">
+          <div class="rule-number">03</div>
+          <div class="rule-content">
+            <h4>Respeto a las Normas de Tránsito</h4>
+            <p>Manejo defensivo permanente, respeto a los límites de velocidad permitidos y uso obligatorio del cinturón de seguridad (conductor y pasajeros).</p>
+          </div>
+        </div>
+
+        <div class="rule-item">
+          <div class="rule-number">04</div>
+          <div class="rule-content">
+            <h4>Excelente Trato al Usuario</h4>
+            <p>Brindar una atención amable, respetuosa y profesional a todo el personal transportado, manteniendo la presentación personal e uniforme impecables.</p>
+          </div>
+        </div>
+
+        <div class="rule-item">
+          <div class="rule-number">05</div>
+          <div class="rule-content">
+            <h4>Prohibición de Distractores</h4>
+            <p>Está estrictamente prohibido el uso del teléfono celular mientras se esté en marcha el vehículo, así como el consumo de alcohol o sustancias.</p>
+          </div>
+        </div>
+
+        <div class="rule-item">
+          <div class="rule-number">06</div>
+          <div class="rule-content">
+            <h4>Reporte de Novedades</h4>
+            <p>Informar inmediatamente a la central de monitoreo cualquier eventualidad técnica, congestión vial grave o incidente durante el recorrido.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACCIÓN FINAL / CONFIRMACIÓN -->
+    <section class="action-footer">
+      <div class="action-card">
+        <h3>¿Ha leído y comprendido la inducción?</h3>
+        <p>Haga clic en el botón a continuación para registrar su lectura y continuar con los videos de capacitación en seguridad vial.</p>
+        <button class="btn-continue" id="btnCompletarInducción">
+          Entendido, continuar a los Módulos <i data-lucide="arrow-right"></i>
+        </button>
+      </div>
+    </section>
+<!-- SECCIÓN DE VIDEO LOCAL -->
+<section class="video-section">
+  <div class="section-title">
+    <h2><i data-lucide="play-circle"></i> Video de Inducción - Seguridad Vial</h2>
+    <p>Por favor, observe el siguiente video instructivo antes de continuar.</p>
+  </div>
+
+  <div class="video-wrapper">
+    <video controls poster="images/miniatura-video.jpg">
+      <source src="video_final.mp4" type="video/mp4">
+      Tu navegador no soporta el reproductor de video.
+    </video>
+  </div>
+</section>
+  </main>
+
+  <script src="capacitaciones.js"></script>
+</body>
+</html>
